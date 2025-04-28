@@ -1,10 +1,10 @@
 <template>
-  <div v-for="(data, index) in users" :key="data.id">
-    <h2>{{ index + 1 }}-{{ data.email }}</h2>
+  <div v-for="(data, index) in posts" :key="data.id">
+    <h1>{{ index + 1 }}. {{ data.title }}</h1>
   </div>
 </template>
 <script>
 export default {
-  props: ['users']
+  props: ['posts']
 }
 </script>
